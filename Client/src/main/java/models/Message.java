@@ -18,6 +18,15 @@ public class Message implements Comparable {
     private String message = "";
     private String toId = "";
     private String fromId = "";
+
+    public Message(String message, String toId, String fromId, String timestamp, String seqId) {
+        this.message = message;
+        this.toId = toId;
+        this.fromId = fromId;
+        this.timestamp = timestamp;
+        this.seqId = seqId;
+    }
+
     private String timestamp = "";
     private String seqId = "";
 
